@@ -4,7 +4,7 @@
  */
 
 /*
- * Finestra3.java
+ * FinestraAfegirProductesATicket.java
  *
  * Created on 09/11/2009, 02:27:24
  */
@@ -19,14 +19,14 @@ import java.util.LinkedHashMap;
  *
  * @author joan
  */
-public class Finestra3 extends javax.swing.JFrame {
+public class FinestraAfegirProductesATicket extends javax.swing.JFrame {
 
     private Register tpv;
-    /** Creates new form Finestra3 */
-    public Finestra3() {
+    /** Creates new form FinestraAfegirProductesATicket */
+    public FinestraAfegirProductesATicket() {
         initComponents();
     }
-    public Finestra3(Register unTpv) {
+    public FinestraAfegirProductesATicket(Register unTpv) {
                 initComponents();
 
         tpv=unTpv;
@@ -40,7 +40,6 @@ public class Finestra3 extends javax.swing.JFrame {
             Item unItem = (Item)cIt.next();
             String p = unItem.getDescription().getItemID()+"\t"+unItem.getDescription().getDescription()+"\t"+unItem.getQuantity()+"\n";
             areaProductes.append(p);
-            //areaProductes.append((unItem.getDescription().getItemID()+"\t")+(unItem.getQuantity()+"\n"));
         }
     }
 
@@ -53,48 +52,48 @@ public class Finestra3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        LabelAccio = new javax.swing.JLabel();
         textIDProducte = new javax.swing.JTextField();
         textQuantitat = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        botoIntroduir = new javax.swing.JButton();
-        botoFinal = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        LIdProducte = new javax.swing.JLabel();
+        LQuantitat = new javax.swing.JLabel();
+        BtnIntroduir = new javax.swing.JButton();
+        BtnFinalitzar = new javax.swing.JButton();
+        LIntroduir = new javax.swing.JLabel();
+        LFinalitzar = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         areaProductes = new javax.swing.JTextArea();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        LProducts = new javax.swing.JLabel();
+        LId = new javax.swing.JLabel();
+        LDesc = new javax.swing.JLabel();
+        LAmount = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Introduir productes");
 
-        jLabel1.setText("Introdueix productes que vols comprar:");
+        LabelAccio.setText("Introdueix productes que vols comprar:");
 
-        jLabel2.setText("idProducte:");
+        LIdProducte.setText("idProducte:");
 
-        jLabel3.setText("Quantitat:");
+        LQuantitat.setText("Quantitat:");
 
-        botoIntroduir.setText("Introduir");
-        botoIntroduir.addActionListener(new java.awt.event.ActionListener() {
+        BtnIntroduir.setText("Introduir");
+        BtnIntroduir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoIntroduirActionPerformed(evt);
+                BtnIntroduirActionPerformed(evt);
             }
         });
 
-        botoFinal.setText("Finalitzar");
-        botoFinal.addActionListener(new java.awt.event.ActionListener() {
+        BtnFinalitzar.setText("Finalitzar");
+        BtnFinalitzar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoFinalActionPerformed(evt);
+                BtnFinalitzarActionPerformed(evt);
             }
         });
 
-        jLabel4.setText("Utilitza 'Introduir' per agregar un altre producte.");
+        LIntroduir.setText("Utilitza 'Introduir' per agregar un altre producte.");
 
-        jLabel5.setText("Utilitza 'Finalitzar' per passar a fer el pagament.");
+        LFinalitzar.setText("Utilitza 'Finalitzar' per passar a fer el pagament.");
 
         areaProductes.setColumns(1);
         areaProductes.setEditable(false);
@@ -102,13 +101,13 @@ public class Finestra3 extends javax.swing.JFrame {
         areaProductes.setTabSize(4);
         jScrollPane1.setViewportView(areaProductes);
 
-        jLabel6.setText("Productes Disponibles:");
+        LProducts.setText("Productes Disponibles:");
 
-        jLabel7.setText("id");
+        LId.setText("id");
 
-        jLabel8.setText("Descripció");
+        LDesc.setText("Descripció");
 
-        jLabel9.setText("Quantitat");
+        LAmount.setText("Quantitat");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -119,8 +118,8 @@ public class Finestra3 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
+                            .addComponent(LIdProducte)
+                            .addComponent(LQuantitat))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(textQuantitat, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -128,23 +127,23 @@ public class Finestra3 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel5)))
+                            .addComponent(LIntroduir)
+                            .addComponent(LabelAccio)
+                            .addComponent(LFinalitzar)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(botoIntroduir, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BtnIntroduir, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botoFinal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(BtnFinalitzar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addComponent(LId)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel8)
+                        .addComponent(LDesc)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel9))
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                        .addComponent(LAmount))
+                    .addComponent(LProducts, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -154,42 +153,41 @@ public class Finestra3 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(38, 38, 38)
-                        .addComponent(jLabel1)
+                        .addComponent(LabelAccio)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
+                            .addComponent(LIdProducte)
                             .addComponent(textIDProducte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(textQuantitat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                            .addComponent(LQuantitat))
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel4)
+                        .addComponent(LIntroduir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel5)
+                        .addComponent(LFinalitzar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(botoFinal)
-                            .addComponent(botoIntroduir)))
+                            .addComponent(BtnFinalitzar)
+                            .addComponent(BtnIntroduir)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addComponent(jLabel6)
+                        .addComponent(LProducts)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
+                            .addComponent(LId)
+                            .addComponent(LDesc)
+                            .addComponent(LAmount))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botoIntroduirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoIntroduirActionPerformed
-        // TODO add your handling code here:
-
+    private void BtnIntroduirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIntroduirActionPerformed
+      
         int id=Integer.parseInt(textIDProducte.getText());
         int q=Integer.parseInt(textQuantitat.getText());
         if((tpv.getStore().getItem(id)==null))
@@ -208,16 +206,16 @@ public class Finestra3 extends javax.swing.JFrame {
             this.textIDProducte.setText("");
         }
 
-    }//GEN-LAST:event_botoIntroduirActionPerformed
+    }//GEN-LAST:event_BtnIntroduirActionPerformed
 
-    private void botoFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoFinalActionPerformed
-        // TODO add your handling code here:
+    private void BtnFinalitzarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFinalitzarActionPerformed
+        
         tpv.finalitzaVenda();
-        Finestra4 f4=new Finestra4(tpv);
+        FinestraPagament f4=new FinestraPagament(tpv);
         f4.show();
         dispose();
         setVisible(false);
-    }//GEN-LAST:event_botoFinalActionPerformed
+    }//GEN-LAST:event_BtnFinalitzarActionPerformed
 
     /**
     * @param args the command line arguments
@@ -225,24 +223,24 @@ public class Finestra3 extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Finestra3().setVisible(true);
+                new FinestraAfegirProductesATicket().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnFinalitzar;
+    private javax.swing.JButton BtnIntroduir;
+    private javax.swing.JLabel LAmount;
+    private javax.swing.JLabel LDesc;
+    private javax.swing.JLabel LFinalitzar;
+    private javax.swing.JLabel LId;
+    private javax.swing.JLabel LIdProducte;
+    private javax.swing.JLabel LIntroduir;
+    private javax.swing.JLabel LProducts;
+    private javax.swing.JLabel LQuantitat;
+    private javax.swing.JLabel LabelAccio;
     private javax.swing.JTextArea areaProductes;
-    private javax.swing.JButton botoFinal;
-    private javax.swing.JButton botoIntroduir;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField textIDProducte;
     private javax.swing.JTextField textQuantitat;

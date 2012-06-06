@@ -26,21 +26,21 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="LDescripcio" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="LNom" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="LAdreça" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="textAddress" max="32767" attributes="1"/>
                           <Component id="textNom" alignment="0" pref="258" max="32767" attributes="1"/>
-                          <Component id="botoOK" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="BtnConfirmaDades" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="29" max="32767" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,19 +48,19 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <Component id="LDescripcio" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LNom" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textNom" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LAdreça" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textAddress" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="botoOK" min="-2" max="-2" attributes="0"/>
+              <Component id="BtnConfirmaDades" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="33" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -74,27 +74,27 @@
         <Property name="name" type="java.lang.String" value="textAddress" noResource="true"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="LNom">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nom:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="LAdre&#xe7;a">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Adressa:"/>
+        <Property name="text" type="java.lang.String" value="Adre&#xe7;a:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="LDescripcio">
       <Properties>
         <Property name="text" type="java.lang.String" value="Introdueix les dades de la botiga:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="botoOK">
+    <Component class="javax.swing.JButton" name="BtnConfirmaDades">
       <Properties>
         <Property name="text" type="java.lang.String" value="OK"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoOKActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnConfirmaDadesActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

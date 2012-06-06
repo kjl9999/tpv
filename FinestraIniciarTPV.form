@@ -27,25 +27,25 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="LDescripcio" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="LIdTPV" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="LIdTreballador" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="textIDTPV" max="32767" attributes="1"/>
                           <Component id="textIDTreballador" alignment="0" pref="138" max="32767" attributes="1"/>
-                          <Component id="botoOK" alignment="0" max="32767" attributes="1"/>
-                          <Component id="botoTancar" alignment="0" max="32767" attributes="1"/>
+                          <Component id="BtnIniciarVenda" alignment="0" max="32767" attributes="1"/>
+                          <Component id="BtnTancarFinestra" alignment="0" max="32767" attributes="1"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="LConsell" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -56,40 +56,40 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="LDescripcio" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LIdTreballador" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textIDTreballador" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="LIdTPV" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textIDTPV" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="botoOK" min="-2" max="-2" attributes="0"/>
+              <Component id="BtnIniciarVenda" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-              <Component id="botoTancar" min="-2" max="-2" attributes="0"/>
+              <Component id="BtnTancarFinestra" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <Component id="LConsell" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="62" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="LDescripcio">
       <Properties>
         <Property name="text" type="java.lang.String" value="Introdueix el Treballador i TPV per Iniciar una venda:  "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="LIdTreballador">
       <Properties>
         <Property name="text" type="java.lang.String" value="idTreballador:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="LIdTPV">
       <Properties>
         <Property name="text" type="java.lang.String" value="idTPV:"/>
       </Properties>
@@ -98,25 +98,25 @@
     </Component>
     <Component class="javax.swing.JTextField" name="textIDTPV">
     </Component>
-    <Component class="javax.swing.JButton" name="botoOK">
+    <Component class="javax.swing.JButton" name="BtnIniciarVenda">
       <Properties>
         <Property name="text" type="java.lang.String" value="Iniciar Venda"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoOKActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnIniciarVendaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="LConsell">
       <Properties>
         <Property name="text" type="java.lang.String" value="*Recorda que idTreballador i idTPV nomes accepten numeros"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="botoTancar">
+    <Component class="javax.swing.JButton" name="BtnTancarFinestra">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tancar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoTancarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnTancarFinestraActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

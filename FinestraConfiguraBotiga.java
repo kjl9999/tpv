@@ -4,7 +4,7 @@
  */
 
 /*
- * Finestra1.java
+ * FinestraConfiguraBotiga.java
  *
  * Created on 09/11/2009, 01:40:16
  */
@@ -18,16 +18,17 @@ import java.util.Iterator;
  *
  * @author joan
  */
-public class Finestra1 extends javax.swing.JFrame {
+public class FinestraConfiguraBotiga extends javax.swing.JFrame {
 
     private Store botiga;
     private Catalog cataleg;
     private Ledger llibre;
-    /** Creates new form Finestra1 */
-    public Finestra1() {
+    
+    /** Creates new form FinestraConfiguraBotiga */
+    public FinestraConfiguraBotiga() {
         initComponents();
     }
-    public Finestra1(Catalog unCataleg, Ledger unLlibre) {
+    public FinestraConfiguraBotiga(Catalog unCataleg, Ledger unLlibre) {
         cataleg=unCataleg;
         llibre=unLlibre;
         initComponents();
@@ -44,26 +45,26 @@ public class Finestra1 extends javax.swing.JFrame {
 
         textNom = new javax.swing.JTextField();
         textAddress = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        botoOK = new javax.swing.JButton();
+        LNom = new javax.swing.JLabel();
+        LAdreça = new javax.swing.JLabel();
+        LDescripcio = new javax.swing.JLabel();
+        BtnConfirmaDades = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Entrar botiga");
 
         textAddress.setName("textAddress"); // NOI18N
 
-        jLabel1.setText("Nom:");
+        LNom.setText("Nom:");
 
-        jLabel2.setText("Adressa:");
+        LAdreça.setText("Adreça:");
 
-        jLabel3.setText("Introdueix les dades de la botiga:");
+        LDescripcio.setText("Introdueix les dades de la botiga:");
 
-        botoOK.setText("OK");
-        botoOK.addActionListener(new java.awt.event.ActionListener() {
+        BtnConfirmaDades.setText("OK");
+        BtnConfirmaDades.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoOKActionPerformed(evt);
+                BtnConfirmaDadesActionPerformed(evt);
             }
         });
 
@@ -74,42 +75,41 @@ public class Finestra1 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
+                    .addComponent(LDescripcio)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                            .addComponent(LNom)
+                            .addComponent(LAdreça))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(textAddress)
                             .addComponent(textNom, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
-                            .addComponent(botoOK, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(29, Short.MAX_VALUE))
+                            .addComponent(BtnConfirmaDades, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jLabel3)
+                .addComponent(LDescripcio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(LNom)
                     .addComponent(textNom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(LAdreça)
                     .addComponent(textAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(botoOK)
+                .addComponent(BtnConfirmaDades)
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botoOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoOKActionPerformed
-        // TODO add your handling code here:
-        
+    private void BtnConfirmaDadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnConfirmaDadesActionPerformed
+               
         botiga=new Store(textNom.getText(), textAddress.getText(),cataleg, llibre);
         Collection col = cataleg.getList().values();
         Iterator cIt=col.iterator();
@@ -118,13 +118,12 @@ public class Finestra1 extends javax.swing.JFrame {
             Item unItem = new Item(10,(DescProduct)cIt.next());
             botiga.addItem(unItem);
         }
-        /*botiga.addItem(new Item(2,cataleg.GetProdFromCatalog(1)));
-        botiga.addItem(new Item(4,cataleg.GetProdFromCatalog(2)));*/
-        Finestra2 f2=new Finestra2(botiga);
+
+        FinestraIniciarTPV f2=new FinestraIniciarTPV(botiga);
         f2.show();
         dispose();
         setVisible(false);
-    }//GEN-LAST:event_botoOKActionPerformed
+    }//GEN-LAST:event_BtnConfirmaDadesActionPerformed
 
     /**
     * @param args the command line arguments
@@ -132,16 +131,16 @@ public class Finestra1 extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Finestra1().setVisible(true);
+                new FinestraConfiguraBotiga().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botoOK;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton BtnConfirmaDades;
+    private javax.swing.JLabel LAdreça;
+    private javax.swing.JLabel LDescripcio;
+    private javax.swing.JLabel LNom;
     private javax.swing.JTextField textAddress;
     private javax.swing.JTextField textNom;
     // End of variables declaration//GEN-END:variables

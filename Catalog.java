@@ -23,16 +23,16 @@ public class Catalog {
     {
       ProdCatalog=new LinkedHashMap();
 
-    FileInputStream cat = new FileInputStream("Cataleg.csv");
-    InputStreamReader catRead = new InputStreamReader(cat);
+    FileInputStream cataleg = new FileInputStream("Cataleg.csv");
+    InputStreamReader catalegReader = new InputStreamReader(cataleg);
 
-    BufferedReader buf = new BufferedReader(catRead);
+    BufferedReader buf = new BufferedReader(catalegReader);
 
-    String st;
+    String lineaFitxer;
     DescProduct desc;
-    while((st=buf.readLine()) != null)
+    while((lineaFitxer=buf.readLine()) != null)
     {
-        String[] par = st.split(",");
+        String[] par = lineaFitxer.split(",");
         desc=new DescProduct(Integer.valueOf(par[0]),par[1],Integer.valueOf(par[2]));
         ProdCatalog.put(desc.getItemID(), desc);
     }

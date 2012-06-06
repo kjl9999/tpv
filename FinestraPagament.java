@@ -4,7 +4,7 @@
  */
 
 /*
- * Finestra4.java
+ * FinestraPagament.java
  *
  * Created on 09/11/2009, 09:10:03
  */
@@ -18,14 +18,14 @@ package tpv;
 import java.util.LinkedHashMap;
 import java.util.Collection;
 import java.util.Iterator;
-public class Finestra4 extends javax.swing.JFrame {
+public class FinestraPagament extends javax.swing.JFrame {
 
     private Register tpv;
-    /** Creates new form Finestra4 */
-    public Finestra4() {
+    /** Creates new form FinestraPagament */
+    public FinestraPagament() {
         initComponents();
     }
-    public Finestra4(Register unTpv) {
+    public FinestraPagament(Register unTpv) {
         tpv=unTpv;
         initComponents();
         LinkedHashMap lines=tpv.getSale().getLines();
@@ -52,14 +52,14 @@ public class Finestra4 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         textVenda = new javax.swing.JTextArea();
         textPagament = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        LabelPayment = new javax.swing.JLabel();
+        BtnPagar = new javax.swing.JButton();
+        LabelProducte = new javax.swing.JLabel();
+        LabelQuantitat = new javax.swing.JLabel();
+        LabelPrice = new javax.swing.JLabel();
+        LabelInt = new javax.swing.JLabel();
+        LabelIntr1 = new javax.swing.JLabel();
+        LabelInstr2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,26 +69,26 @@ public class Finestra4 extends javax.swing.JFrame {
         textVenda.setMinimumSize(new java.awt.Dimension(0, 1));
         jScrollPane1.setViewportView(textVenda);
 
-        jLabel2.setText("Pagament:");
+        LabelPayment.setText("Pagament:");
 
-        jButton1.setText("Pagar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BtnPagar.setText("Pagar");
+        BtnPagar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BtnPagarActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Producte");
+        LabelProducte.setText("Producte");
 
-        jLabel4.setText("Quantitat");
+        LabelQuantitat.setText("Quantitat");
 
-        jLabel5.setText("Preu unitat");
+        LabelPrice.setText("Preu unitat");
 
-        jLabel6.setText("* int");
+        LabelInt.setText("* int");
 
-        jLabel1.setText("Introdueix al cap 'Pagament' la quantitat pagada.");
+        LabelIntr1.setText("Introdueix al cap 'Pagament' la quantitat pagada.");
 
-        jLabel7.setText("Utilitza 'Pagar'  per relaitzar el pagament.");
+        LabelInstr2.setText("Utilitza 'Pagar'  per relaitzar el pagament.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,22 +97,22 @@ public class Finestra4 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel1)
+                    .addComponent(LabelInstr2)
+                    .addComponent(LabelIntr1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(LabelPayment)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BtnPagar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(textPagament, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6))
+                        .addComponent(LabelInt))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                        .addComponent(LabelProducte)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
+                        .addComponent(LabelQuantitat)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel5)
+                        .addComponent(LabelPrice)
                         .addGap(28, 28, 28))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(135, Short.MAX_VALUE))
@@ -122,30 +122,30 @@ public class Finestra4 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4))
+                    .addComponent(LabelProducte)
+                    .addComponent(LabelPrice)
+                    .addComponent(LabelQuantitat))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
+                .addComponent(LabelIntr1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(LabelInstr2)
                 .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(LabelPayment)
                     .addComponent(textPagament, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
+                    .addComponent(LabelInt))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(BtnPagar)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void BtnPagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPagarActionPerformed
+        
         int p = Integer.parseInt(textPagament.getText());
         if(p<tpv.getSale().getTotal())
         {
@@ -154,13 +154,13 @@ public class Finestra4 extends javax.swing.JFrame {
         }else
         {
             tpv.ferPagament(p);
-            Finestra5 f5=new Finestra5(tpv);
+            FinestraFiCompra f5=new FinestraFiCompra(tpv);
             f5.show();
             dispose();
             setVisible(false);
         }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BtnPagarActionPerformed
 
     /**
     * @param args the command line arguments
@@ -168,20 +168,20 @@ public class Finestra4 extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Finestra4().setVisible(true);
+                new FinestraPagament().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JButton BtnPagar;
+    private javax.swing.JLabel LabelInstr2;
+    private javax.swing.JLabel LabelInt;
+    private javax.swing.JLabel LabelIntr1;
+    private javax.swing.JLabel LabelPayment;
+    private javax.swing.JLabel LabelPrice;
+    private javax.swing.JLabel LabelProducte;
+    private javax.swing.JLabel LabelQuantitat;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField textPagament;
     private javax.swing.JTextArea textVenda;

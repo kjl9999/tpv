@@ -18,13 +18,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        // TODO code application logic here
 
         Catalog cataleg=new Catalog();
 
         Ledger llibre=new Ledger();
 
-        Finestra1 f=new Finestra1(cataleg, llibre);
+        FinestraConfiguraBotiga f=new FinestraConfiguraBotiga(cataleg, llibre);
         f.show();
     }
 

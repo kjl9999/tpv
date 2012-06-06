@@ -4,7 +4,7 @@
  */
 
 /*
- * Finestra2.java
+ * FinestraIniciarTPV.java
  *
  * Created on 09/11/2009, 01:44:55
  */
@@ -15,14 +15,14 @@ package tpv;
  *
  * @author joan
  */
-public class Finestra2 extends javax.swing.JFrame {
+public class FinestraIniciarTPV extends javax.swing.JFrame {
 
     private Store botiga;
-    /** Creates new form Finestra2 */
-    public Finestra2() {
+    /** Creates new form FinestraIniciarTPV */
+    public FinestraIniciarTPV() {
         initComponents();
     }
-    public Finestra2(Store unaBotiga) {
+    public FinestraIniciarTPV(Store unaBotiga) {
         botiga=unaBotiga;
         initComponents();
     }
@@ -36,37 +36,37 @@ public class Finestra2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        LDescripcio = new javax.swing.JLabel();
+        LIdTreballador = new javax.swing.JLabel();
+        LIdTPV = new javax.swing.JLabel();
         textIDTreballador = new javax.swing.JTextField();
         textIDTPV = new javax.swing.JTextField();
-        botoOK = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        botoTancar = new javax.swing.JButton();
+        BtnIniciarVenda = new javax.swing.JButton();
+        LConsell = new javax.swing.JLabel();
+        BtnTancarFinestra = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Iniciar Venda");
 
-        jLabel1.setText("Introdueix el Treballador i TPV per Iniciar una venda:  ");
+        LDescripcio.setText("Introdueix el Treballador i TPV per Iniciar una venda:  ");
 
-        jLabel2.setText("idTreballador:");
+        LIdTreballador.setText("idTreballador:");
 
-        jLabel3.setText("idTPV:");
+        LIdTPV.setText("idTPV:");
 
-        botoOK.setText("Iniciar Venda");
-        botoOK.addActionListener(new java.awt.event.ActionListener() {
+        BtnIniciarVenda.setText("Iniciar Venda");
+        BtnIniciarVenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoOKActionPerformed(evt);
+                BtnIniciarVendaActionPerformed(evt);
             }
         });
 
-        jLabel4.setText("*Recorda que idTreballador i idTPV nomes accepten numeros");
+        LConsell.setText("*Recorda que idTreballador i idTPV nomes accepten numeros");
 
-        botoTancar.setText("Tancar");
-        botoTancar.addActionListener(new java.awt.event.ActionListener() {
+        BtnTancarFinestra.setText("Tancar");
+        BtnTancarFinestra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoTancarActionPerformed(evt);
+                BtnTancarFinestraActionPerformed(evt);
             }
         });
 
@@ -78,50 +78,50 @@ public class Finestra2 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(jLabel1))
+                        .addComponent(LDescripcio))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2))
+                            .addComponent(LIdTPV)
+                            .addComponent(LIdTreballador))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(textIDTPV)
                             .addComponent(textIDTreballador, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .addComponent(botoOK, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botoTancar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(BtnIniciarVenda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BtnTancarFinestra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(63, 63, 63)
-                        .addComponent(jLabel4)))
+                        .addComponent(LConsell)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
-                .addComponent(jLabel1)
+                .addComponent(LDescripcio)
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(LIdTreballador)
                     .addComponent(textIDTreballador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(LIdTPV)
                     .addComponent(textIDTPV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(botoOK)
+                .addComponent(BtnIniciarVenda)
                 .addGap(4, 4, 4)
-                .addComponent(botoTancar)
+                .addComponent(BtnTancarFinestra)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(LConsell)
                 .addContainerGap(62, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botoOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoOKActionPerformed
-        // TODO add your handling code here:
+    private void BtnIniciarVendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIniciarVendaActionPerformed
+      
         int idT=Integer.parseInt(textIDTreballador.getText());
         int idR=Integer.parseInt(textIDTPV.getText());
 
@@ -134,15 +134,15 @@ public class Finestra2 extends javax.swing.JFrame {
         Register tpv = botiga.getRegister(idR);
         tpv.setCashier(treballador);
         tpv.crearNovaVenda();
-        Finestra3 f3 = new Finestra3(tpv);
+        FinestraAfegirProductesATicket f3 = new FinestraAfegirProductesATicket(tpv);
         f3.show();
-    }//GEN-LAST:event_botoOKActionPerformed
+    }//GEN-LAST:event_BtnIniciarVendaActionPerformed
 
-    private void botoTancarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoTancarActionPerformed
-        // TODO add your handling code here:
+    private void BtnTancarFinestraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTancarFinestraActionPerformed
+        
         dispose();
         setVisible(false);
-    }//GEN-LAST:event_botoTancarActionPerformed
+    }//GEN-LAST:event_BtnTancarFinestraActionPerformed
 
     /**
     * @param args the command line arguments
@@ -150,18 +150,18 @@ public class Finestra2 extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Finestra2().setVisible(true);
+                new FinestraIniciarTPV().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botoOK;
-    private javax.swing.JButton botoTancar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton BtnIniciarVenda;
+    private javax.swing.JButton BtnTancarFinestra;
+    private javax.swing.JLabel LConsell;
+    private javax.swing.JLabel LDescripcio;
+    private javax.swing.JLabel LIdTPV;
+    private javax.swing.JLabel LIdTreballador;
     private javax.swing.JTextField textIDTPV;
     private javax.swing.JTextField textIDTreballador;
     // End of variables declaration//GEN-END:variables

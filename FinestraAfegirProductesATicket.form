@@ -28,8 +28,8 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LIdProducte" min="-2" max="-2" attributes="0"/>
+                          <Component id="LQuantitat" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -40,28 +40,28 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LIntroduir" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LabelAccio" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LFinalitzar" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="1">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botoIntroduir" min="-2" pref="158" max="-2" attributes="1"/>
+                      <Component id="BtnIntroduir" min="-2" pref="158" max="-2" attributes="1"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botoFinal" max="32767" attributes="1"/>
+                      <Component id="BtnFinalitzar" max="32767" attributes="1"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="LId" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <Component id="LDesc" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <Component id="LAmount" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel6" alignment="0" pref="196" max="32767" attributes="1"/>
+                  <Component id="LProducts" alignment="0" pref="196" max="32767" attributes="1"/>
                   <Component id="jScrollPane1" alignment="0" pref="196" max="32767" attributes="1"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -74,38 +74,38 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="LabelAccio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LIdProducte" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="textIDProducte" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="textQuantitat" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LQuantitat" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                      <Component id="LIntroduir" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <Component id="LFinalitzar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="62" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="botoFinal" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="botoIntroduir" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnFinalitzar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnIntroduir" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="LProducts" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LId" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LDesc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LAmount" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" pref="194" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="202" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -114,7 +114,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="LabelAccio">
       <Properties>
         <Property name="text" type="java.lang.String" value="Introdueix productes que vols comprar:"/>
       </Properties>
@@ -123,38 +123,38 @@
     </Component>
     <Component class="javax.swing.JTextField" name="textQuantitat">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="LIdProducte">
       <Properties>
         <Property name="text" type="java.lang.String" value="idProducte:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="LQuantitat">
       <Properties>
         <Property name="text" type="java.lang.String" value="Quantitat:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="botoIntroduir">
+    <Component class="javax.swing.JButton" name="BtnIntroduir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Introduir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoIntroduirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnIntroduirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botoFinal">
+    <Component class="javax.swing.JButton" name="BtnFinalitzar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Finalitzar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoFinalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnFinalitzarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="LIntroduir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Utilitza &apos;Introduir&apos; per agregar un altre producte."/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="LFinalitzar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Utilitza &apos;Finalitzar&apos; per passar a fer el pagament."/>
       </Properties>
@@ -176,22 +176,22 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="LProducts">
       <Properties>
         <Property name="text" type="java.lang.String" value="Productes Disponibles:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
+    <Component class="javax.swing.JLabel" name="LId">
       <Properties>
         <Property name="text" type="java.lang.String" value="id"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
+    <Component class="javax.swing.JLabel" name="LDesc">
       <Properties>
         <Property name="text" type="java.lang.String" value="Descripci&#xf3;"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="LAmount">
       <Properties>
         <Property name="text" type="java.lang.String" value="Quantitat"/>
       </Properties>
